@@ -20,8 +20,8 @@ app = Flask(__name__)
 
 # LINE_CHANNEL_SECRET 和 LINE_CHANNEL_ACCESS_TOKEN 類似聊天機器人的密碼，記得不要放到 repl.it 或是和他人分享
 # 從環境變數取出設定參數
-LINE_CHANNEL_ACCESS_TOKEN = os.environ.get('mq+BAe18osU9hF2NrfMv5tmq50njXKEJuStgqeni/I7lq+W+hT+/wkXcvDYDYSqTD6GHJcn5lsAxwCPfvNrb0RBVMtDT77SSyizYtAumQvHGf4QrBJsI5j9v2ng5UwG8fH/eTQfpx0yuihUSAvvetAdB04t89/1O/w1cDnyilFU=')
-LINE_CHANNEL_SECRET = os.environ.get('8026b79d1c8ff3d3158addf8b0fb5d69')
+LINE_CHANNEL_ACCESS_TOKEN = os.environ.get('LINE_CHANNEL_ACCESS_TOKEN')
+LINE_CHANNEL_SECRET = os.environ.get('LINE_CHANNEL_SECRET')
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
